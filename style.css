@@ -29,6 +29,7 @@
 img{
     position: absolute;
     height: 400px;
+    width: 400px;
     left: 31cm;
     display: none;
 }
@@ -354,7 +355,7 @@ small{
 
   /* Mobile Landscape */
 
-  @media screen and (orientation:landscape) {
+  @media screen and (max-width:867px) {
     *{
         padding: 0;
         margin: 0;
