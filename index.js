@@ -57,11 +57,12 @@ const Range = (range) =>{
 
 //! Loader 
 
-const loader = document.querySelector(".loader");
+
 const delay = document.querySelector(".proc");
 
 window.addEventListener("load", ()=>{
-   loader.style.display = "none";
+    document.querySelector(".loader").style.display = "none";
+   document.querySelector("img").style.display = "block"
    
 });
 

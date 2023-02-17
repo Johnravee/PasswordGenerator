@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
-    overflow-x: hidden;
+    overflow:hidden;
 }
 
 .rubber {
@@ -30,6 +30,7 @@ img{
     position: absolute;
     height: 400px;
     left: 31cm;
+    display: none;
 }
 
 .container{
@@ -55,7 +56,7 @@ img{
     height: 80%;
     max-height: 100%;
     width: 40%;
-    max-width: 40%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,6 +96,7 @@ label{
 
 
 h1{
+    text-align: center;
     margin: 20px;
     color: #4CAF50;
 }
@@ -240,6 +242,7 @@ small{
     transition: 0.5s ease-in;
     transform: scale(0);
     border-radius: 5px;
+    text-align: center;
    }
 
    h3{
@@ -248,7 +251,7 @@ small{
 
    #pswGeneratedtxt{
     width: 60%;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     margin: 10px;
     border-radius: 5px;
@@ -256,6 +259,7 @@ small{
     outline: none;
     background-color: #efefef;
     cursor:text;
+    font-size: 23px;
    }
     
    
@@ -274,3 +278,129 @@ small{
   .backbtn:hover{
     opacity: 0.7;
   } 
+
+
+  /* Tablets */
+
+@media screen and (max-width: 769px) {
+    
+    .rubber{
+        top: 10%;
+        left: 7%;
+     }
+ 
+     img{
+         height: 100px;
+         width: 100px;
+         left: 82%;
+         top: 6.5%;
+         position: absolute
+     }
+ 
+ 
+     .box{
+         height: 80%;
+         width: 90%;
+     }
+ 
+     .modals{
+         width: 80%;
+     }
+     
+     #pswGeneratedtxt{
+         width: 90%;
+     }
+}
+
+ /* mobile */
+
+ @media screen and (max-width: 480px){
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .rubber{
+       top: 10%;
+       left: 7%;
+      
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+        left: 81%;
+        top: 5%;
+        position: absolute;
+    }
+
+
+    .box{
+        height: 80%;
+        width: 90%;
+    }
+
+    .modals{
+        width: 80%;
+    }
+    
+    #pswGeneratedtxt{
+        width: 90%;
+    }
+
+
+  }
+
+  /* Mobile Landscape */
+
+  @media screen and (orientation:landscape) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .rubber{
+       top: 11%;
+       left: 5.5%;
+       height: 25px;
+       font-size: 15px;
+       padding: 0;
+      
+    }
+
+    img{
+        height: 50px;
+        width: 50px;
+        left: 87.5%;
+        top: 3%;
+        position: absolute;
+    }
+
+
+    .box{
+        height: 100%;
+        width: 90%;
+        margin: 10px;
+    }
+
+    .modals{
+        height: 65%;
+        width: 85%;
+    }
+    
+    #pswGeneratedtxt{
+        width: 90%;
+    }
+
+    .backbtn{
+        margin: 1em 0 0 0;
+    }
+
+
+    .creator{
+        margin: 0;
+        padding: 10px;
+    }
+
+ }
