@@ -3,10 +3,8 @@
 
 //!Generator
 const Generate = () => {
-    const display = document.querySelector(".text");
-    const copied = document.querySelector(".copied");
-    const copyMsg = document.querySelector("h6");
-    const generatedMsg = document.querySelector("h5");
+    const pswGeneratedtxt = document.querySelector("#pswGeneratedtxt")
+    const modal = document.querySelector(".modals");
     let length = Range(),
     char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()_+=[]{};':/|,./<>?",
     passCon = "";
@@ -16,22 +14,15 @@ const Generate = () => {
         passCon += char.charAt(Math.floor(Math.random() * x));
     };
 
-    //*message 
-    copyMsg.style.visibility = "visible";
-    generatedMsg.style.visibility = "visible"
-
-    //*Timer
-    setTimeout(()=>copyMsg.style.visibility = "hidden",5000)
-    setTimeout(()=>generatedMsg.style.visibility = "hidden",5000)
-
-    //* Throw a value to html format
-   let txt = display.innerHTML = passCon;
-   setTimeout(()=> display.innerHTML = "",5000);
-
-   //*diplay to copied password
-   copied.innerText = txt;
-   setTimeout(()=> copied.innerHTML = "",5000)
-
+   
+    modal.style.display = "flex";
+    modal.style.transform = "scale(1)";
+    
+    
+   //*Store a data
+   let txt = pswGeneratedtxt.innerHTML = passCon;
+   
+    
     //*Copying the generated txt 
     navigator.clipboard.writeText(txt);
 
@@ -75,4 +66,13 @@ window.addEventListener("load", ()=>{
 });
 
 setTimeout(()=> delay.style.display = "none",4000)
+
+//!Close btn
+
+const Close = () => {
+  const modal = document.querySelector(".modals");
+
+  modal.style.transform = "scale(0)";
+  modal.style.transition = "all 0.5s ease-out";
+};
 

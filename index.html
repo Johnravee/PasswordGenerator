@@ -48,14 +48,6 @@
         <div class="content">
             <div class="box">
                 <h1>PASSWORD GENERATOR</h1>
-                <h5>Password Generated</h5>
-                <div class="display">
-                    <div class="text"></div>
-                </div>
-                
-                <h6>Copied Password!</h6>
-                <div class="copied"></div>
-
                 <h4>Password Length</h4>
                 <div class="input">
                     <input type="range" id="range" value="0" max="16" oninput="Range()" />
@@ -68,6 +60,13 @@
 
          </div>
 
+         <!-- Modal -->
+         <div class="modals">
+            <h3>Password is copied, You can now Paste it.</h3>
+            <div id="pswGeneratedtxt"></div>
+            <button class="backbtn" onclick="Close()">X</button>
+          </div>
+
          <section>
             <div class="creator">
                 <p>Javascript</p>
@@ -75,5 +74,6 @@
          </section>
         </div>
       </div>
+
 </body>
 </html>
