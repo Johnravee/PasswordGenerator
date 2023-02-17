@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" >
     <title>Password Generator</title>
 
     <!-- CSS only -->
@@ -13,15 +14,48 @@
     
 </head>
 <body>
+<!-- load delay -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c3Z3hpEgXBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c3Z3hpEgXBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c3Z3hpEgXBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/c3Z3hpEgXBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!-- Loader -->
+<div class="loader">
+    <div class="spinner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        </div>
+</div>
+
+<!-- Delay -->
+<div class="proc"></div>
+
+    <!-- Stamp -->
+    <div class="rubber">
+        John rave
+      </div>
+
+        <!-- Leaves -->
+      <img src="Green-Leaves-No-Background.png" alt="">
+
+
       <div class="container">
         <div class="content">
             <div class="box">
-                <h1>Password Generator</h1>
+                <h1>PASSWORD GENERATOR</h1>
+                <h5>Password Generated</h5>
                 <div class="display">
                     <div class="text"></div>
-                    
                 </div>
                 
+                <h6>Copied Password!</h6>
+                <div class="copied"></div>
+
                 <h4>Password Length</h4>
                 <div class="input">
                     <input type="range" id="range" value="0" max="16" oninput="Range()" />
@@ -30,10 +64,15 @@
             
                 <div class="btn">
                     <button onclick="Generate()">Generate</button>
-                    <button onclick="Copy()" id="Copy">Copy</button>
                 </div>
 
          </div>
+
+         <section>
+            <div class="creator">
+                <p>Javascript</p>
+            </div>
+         </section>
         </div>
       </div>
 </body>
