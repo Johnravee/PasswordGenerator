@@ -20,12 +20,13 @@ const Generate = () => {
     
     
    //*Store a data
-   let txt = pswGeneratedtxt.innerHTML = passCon;
-   
+    pswGeneratedtxt.innerHTML = passCon;
+ 
     
     //*Copying the generated txt 
-    navigator.clipboard.writeText(txt);
-
+    navigator.clipboard.writeText(passCon);
+   
+ 
 };
 
 //!Clipboard
