@@ -9,7 +9,7 @@ const Generate = () => {
     char = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789~`!@#$%^&*()_+=[]{};':/|,./<>?",
     passCon = "";
 
-    for(let i = 0, x = char.length; i <= length; i++)
+    for(let i = 0, x = char.length; i < length; i++)
     {
         passCon += char.charAt(Math.floor(Math.random() * x));
     };
